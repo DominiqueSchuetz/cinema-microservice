@@ -20,7 +20,7 @@ mediator.on('db.ready', (db) => {
   let rep
   repository.connect(db)
     .then(repo => {
-      console.log('Connected. Starting Server')
+      console.log('Connected.  Starting Server')
       rep = repo
       return server.start({
         port: config.serverSettings.port,
